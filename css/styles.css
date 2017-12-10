@@ -1,0 +1,401 @@
+
+/*General styles, bodies etc.*/
+
+body {
+  color:gainsboro;
+  font-family: 'Mukta Vaani', Helvetica, sans-serif;
+  font-size:1.5em;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+
+body#main{
+    background-image: url("../img/background1.jpg");
+}
+
+body#ds1 {
+	background-image: url("../img/background2.png");
+}
+
+body#ds2 {
+	background-image: url("../img/background3.jpg");
+}
+
+body#ds3 {
+	background-image: url("../img/background4.jpg");
+}
+
+body#dscontact {
+	background-image: url("../img/background5.jpg");
+}
+
+/*Navigation menu*/
+
+.nav {
+	float: right;
+}
+
+.navbar {
+	margin-bottom: 0;
+	padding:0.5em;
+	background-color: rgba(10, 10, 10, 0.85);
+	border:none;
+	font-size:1.5em;
+}
+
+
+
+
+/*.navbar a {
+	color:gainsboro !important;
+}*/
+
+ /*Jumbotron on the main page*/
+
+.parallaxCover {
+	min-height: 30em;
+	background-image: url("../img/background.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+	padding-left: 3%;
+	padding-top: 5%;
+	color: silver;
+	font-family: 'Eagle Lake', cursive;
+	text-align:center;
+
+}
+
+.jumbotron h1 {
+	font-family: 'Mukta Vaani', sans-serif;
+	padding-bottom: 20px;
+}
+
+/*Headings*/
+
+h1{
+	text-align: center;
+}
+
+
+/*Footer*/
+
+.footer {
+	background-color: rgba(10, 10, 10, 0.85);
+	color:silver;
+	margin-top: 3em;
+	font-size:1.2em;
+}
+
+.footer ul{
+	list-style-type:none;
+}
+.footer ul li{
+		display: inline;
+		margin: 2%;
+		padding: 5px;
+}
+
+.footer ul audio {
+	margin-top:10px;
+}
+
+.footer a {
+	color: silver;
+}
+
+.footer h3 {
+	text-align:center;
+}
+
+.copyright {
+  font-size: 0.8em;
+  padding-left: 67px;
+  padding-bottom: 25px;
+}
+
+
+/*Custom classes: background images, colors, videos...*/
+
+/*Style for adding black semi-transparent background behind 'container'*/
+.bg-color{
+	background:rgba(0,0,0,0.65);
+}
+
+/*Styling background images in order to scale them with screen resizing*/
+
+.bg-image {
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:right;
+}
+
+/*Images*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Videos, Embeds*/
+
+#my_video {
+	width:100%;
+	padding-top:25px;
+}
+
+.video-container{
+	position:relative;
+	padding-bottom: 30%;
+	padding-top: 30px;
+	padding-right:100px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+iframe {
+	border-style: none;
+}
+
+/* Contact form*/
+form {
+  background-color: #EBEBEB;
+  color: #666B86;
+  margin: auto;
+  position: relative;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: 1px solid #333333;
+  text-align: center;
+  word-break:break-all;
+}
+
+form label {
+	font-weight:normal;
+}
+
+/*form p {
+  white-space:pre-line;
+}*/
+
+form p span {
+	font-weight: 700;
+}
+
+form input{
+	color:#666B86;
+}
+
+textarea {
+  width:100%;
+  min-height:200px;
+}
+
+/*Table on the Contact &amp; more page*/
+
+.table {
+  width: 50%;
+}
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:1.8em;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+
+thead {
+  height: 25%;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+/*tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}*/
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+/*tr:nth-child(odd):hover td {
+  background:#4E5066;
+}*/
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+/* Images of available platforms on main page */
+
+.platforms h3 {
+	text-align: center;
+	padding-top: 25px;
+}
+
+.platforms img {
+	padding:20px;
+}
+
+/* Links */
+
+a {
+	text-decoration:underline;
+}
+
+a:visited {
+	color: #551A8B;
+}
+
+.footer a, .navbar a{
+	text-decoration:none !important;
+}
+
+.footer a:visited{
+	text-decoration:none !important;
+	color: gainsboro !important;
+}
+
+aside {
+	text-align: center;
+}
+
+/* Buttons */
+
+#accessStyle, #normalStyle {
+  color:black;
+}
+
+
+
+/* Responsive */
+
+@media  only screen and (max-width: 400px) {
+  
+/* I wanted to make table more responsive below 400px viewport */
+  thead tr { 
+    position: absolute;
+    display:none;
+  }
+}
+
